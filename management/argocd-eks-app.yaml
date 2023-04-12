@@ -4,12 +4,12 @@ metadata:
   name: eks-cluster
 spec:
   destination:
-    name: ''
+    name: 'in-cluster'
     namespace: 'default'
     server: 'https://kubernetes.default.svc'
   source:
     path: 'capi-cluster/aws-eks'
-    repoURL: '[Replace with your forked Git repo URL]'
+    repoURL: 'https://github.com/shinichitazawa/eks-ec2-clusterapi-gitops.git'
     targetRevision: HEAD
     #helm:
      # valueFiles:
